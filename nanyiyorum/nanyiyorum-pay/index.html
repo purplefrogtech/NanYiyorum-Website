@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan Yiyorum - Ödeme Adımı</title>
+  
+
+ <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/nanyiyorum-favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+
+
+</head>
+
+<body>
+    
+<div class="container">
+<form action="">
+    <div class="row">
+ 
+
+        <div class="column">
+            <h3 class="title">Ödeme</h3>
+            <div class="input-box">
+                <span>Kart Türü :</span>
+               <img src="/nanyiyorum-pay/imgcards.png" alt="">
+            </div>
+            <div class="input-box">
+                <span>Kart Üzerindeki İsim :</span>
+                <input type="email" 
+                placeholder="Ahmet ece">
+            </div>
+            <div class="input-box">
+                <span>Kart Numarası :</span>
+                <input type="number" 
+                placeholder="1111 1111 1111 1111 1111">
+            </div>
+            <div class="input-box">
+                <span>Son Kullanma Tarihi :</span>
+                <input type="text" 
+                placeholder="03">
+            </div>
+            
+            <div class="input-box">
+                <span>CVV :</span>
+                <input type="number" 
+                placeholder="47200">
+            </div>
+        </div>
+    </div>
+<button type="submit" class="btn"> Sipariş ver</button>
+
+</form>
+
+</div>
+</body>
+
+</html>

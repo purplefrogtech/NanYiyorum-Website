@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nan Yiyorum</title>
+
+<!-- 
+  - favicon
+-->
+<link rel="shortcut icon" href="./assets/images/nanyiyorum-favicon.png" type="image/svg+xml">
+
+<!-- 
+  - custom css link
+-->
+<link rel="stylesheet" href="/nanyiyorum-home/style.css">
+
+<!-- 
+  - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- 
+  - preload images
+-->
+<link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+<link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
+<link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+<!-- 
+  - #HEADER
+-->
+
+<header class="header" data-header>
+  <div class="container">
+
+    <h1>
+      <a href="#" class="logo">Nan Yiyorum<span class="span">.</span></a>
+    </h1>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+
+
+
+      
+        
+          <div class="location">
+            
+            
+ 
+           
+
+
+          </div>
+
+
+
+        <li class="nav-item">
+          <a href="#home" class="navbar-link" data-nav-link>Ana Sayfa</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="navbar-link" data-nav-link>Sipariş Ver</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#food-menu" class="navbar-link" data-nav-link>Sepetim</a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+    <div class="header-btn-group">
+      <button class="search-btn" aria-label="Search" data-search-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <button class="btn btn-hover"><a href="/nanyiyorum-profile/index.html">Hesap Ayarları</a></button>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+
+<!-- 
+  - #SEARCH BOX
+-->
+
+<div class="search-container" data-search-container>
+
+  <div class="search-box">
+    <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+      class="search-input">
+
+    <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+      <ion-icon name="search-outline"></ion-icon>
+    </button>
+  </div>
+
+  <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+</div>
+
+
+
+
+    <!-- 
+      - #FOOD MENU
+    -->
+
+    <section class="section food-menu" id="food-menu">
+      <div class="container">
+
+
+        <h2 class="h2 section-title">
+          Kendine Özgü <span class="span">Yemeğini Bul!</span>
+        </h2>
+
+        <ul class="fiter-list">
+
+          <li>
+            <button class="filter-btn  active">Hepsi</button>
+          </li>
+
+          <li>
+            <button class="filter-btn">Döner</button>
+          </li>
+
+          <li>
+            <button class="filter-btn">Çiğköfte</button>
+          </li>
+
+          <li>
+            <button class="filter-btn">Lahmacun</button>
+          </li>
+
+          <li>
+            <button class="filter-btn">Tatlı</button>
+          </li>
+
+        </ul>
+
+        <ul class="food-menu-list">
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek1.png" width="300" height="300" loading="lazy"
+                  alt="Fried Chicken Unlimited" class="w-100">
+
+                <div class="badge">-15%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Döner</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Mardin Hatay Döner</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price">₺55.00</data>
+
+                <del class="del" value="75.00">₺75.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek2.png" width="300" height="300" loading="lazy"
+                  alt="Burger King Whopper" class="w-100">
+
+                <div class="badge">-10%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Çiğköfte</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Arsemie Çiğköfte</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price" value="45.00">₺45.00</data>
+
+                <del class="del">₺55.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek3.png" width="300" height="300" loading="lazy"
+                  alt="White Castle Pizzas" class="w-100">
+
+                <div class="badge">-25%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Lahmacun</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Mardin Lahmacun</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price" value="75.00">₺75.00</data>
+
+                <del class="del">₺95.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek4.png" width="300" height="300" loading="lazy"
+                  alt="Bell Burrito Supreme" class="w-100">
+
+                <div class="badge">-20%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Tatlı</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Mila Profiterol Tatlısı</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price" value="85.00 ">₺85.00</data>
+
+                <del class="del">₺120.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek5.png" width="300" height="300" loading="lazy"
+                  alt="Kung Pao Chicken BBQ" class="w-100">
+
+                <div class="badge">-5%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Döner</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Mardin Döner</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price" value="80.00">₺80.00</data>
+
+                <del class="del">₺100.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="food-menu-card">
+
+              <div class="card-banner">
+                <img src="./assets/yemekler/yemek6.png" width="300" height="300" loading="lazy"
+                  alt="Wendy's Chicken" class="w-100">
+
+                <div class="badge">-15%</div>
+
+                <button class="btn food-menu-btn">Sipariş Ver</button>
+              </div>
+
+              <div class="wrapper">
+                <p class="category">Çiğköfte</p>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+
+              <h3 class="h3 card-title">Mardin Komagene Çiğköfte</h3>
+
+              <div class="price-wrapper">
+
+                <p class="price-text">FİYAT:</p>
+
+                <data class="price" value="45.00">₺45.00</data>
+
+                <del class="del">₺60.00</del>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<script src="/nanyiyorum-home/app.js"></script>
+    
+
+
+</body>
+
+</html>
